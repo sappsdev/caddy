@@ -1,0 +1,11 @@
+domain.com {
+    reverse_proxy sms-iprn-web:3000
+}
+
+www.domain.com {
+    reverse_proxy container-web:3000
+}
+
+api.domain.com {
+    reverse_proxy container-api:3001
+}
