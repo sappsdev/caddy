@@ -18,3 +18,8 @@ services:
 volumes:
   caddy_data:
   caddy_config:
+
+networks:
+  default:
+    external:
+      name: sappsdev
